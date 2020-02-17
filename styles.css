@@ -83,6 +83,7 @@ h4 {
   color: #fff;
   display: flex;
   flex-direction: column;
+  height: 15vh;
   margin-bottom: 65px;
   padding: 5px 25px;
 }
@@ -137,12 +138,20 @@ h1 {
 
 /********************************* FOOTER *********************************/
 
-.footer {
-  background-color: #ffcccc;
+footer {
+  background-color: #53537c;
+  color: #fff;
   padding: 20px 0;
   text-align: center;
-  height: 50px;
+  height: 15vh;
   flex-shrink: 0;
+}
+
+ul a i {
+  color: #fff;
+  height: 5em;
+  margin: 0 1%;
+  width: auto;
 }
 
 /********************************* LANDING PAGE *********************************/

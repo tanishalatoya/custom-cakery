@@ -45,7 +45,6 @@ if (document.querySelector("#order")) {
   const showModal = () => {
     modal.classList.add("active")
     body.classList.add("modal-active")
-    console.log('it works here');
   }
 
   document.querySelector(".modal-button").addEventListener("click", () => {
@@ -89,4 +88,12 @@ close.addEventListener('keyup', () => {
     menu.classList.remove("active");
     close.classList.remove("active")
   }
+})
+
+document.querySelector(".modal-close").addEventListener('keyUp', () => {
+  if (event.keyCode === 13) {
+    console.log('babe');
+  hideModal();
+  }
+
 })

@@ -17,7 +17,7 @@ html, body {
 
 body.modal-active::after {
   content: '';
-  background-color: rgba(0, 0, 0, .5);
+  /* background-color: rgba(0, 0, 0, .5); */
   position: fixed;
   top: 0;
   left: 0;
@@ -282,7 +282,8 @@ hr {
 }
 
 .modal {
-  background-color: #ffffff;
+  background: #2e1154;
+  color: white;
   display: none;
   position: absolute;
   max-width: 300px;
@@ -291,6 +292,24 @@ hr {
   transform: translate(-50%, -50%);
   padding: 100px 50px;
   z-index: 10;
+}
+
+.modal h3 {
+  line-height: 1.2em;
+}
+
+.modal input {
+  font-size: .9em;
+}
+
+.modal button {
+  background: #fff;
+  border-radius: 4px;
+  color: #2e1154;
+  cursor: pointer;
+  font-size: .8em;
+  margin-top: 10%;
+  padding: 2% 4%;
 }
 
 .modal-close {

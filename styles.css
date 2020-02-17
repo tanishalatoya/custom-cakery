@@ -64,7 +64,7 @@ h1 {
 }
 
 h4 {
-  font-size: 40px;
+  font-size: 1.3em;
   text-align: center;
 }
 
@@ -231,10 +231,12 @@ hr {
 .gallery-wrapper {
   display: flex;
   flex-wrap: wrap;
+  padding: 0 2%;
 }
 
 .gallery-item {
    flex: 1 0 21%;
+   margin: .5%;
    max-width: 25%;
    position: relative;
 }
@@ -244,11 +246,15 @@ hr {
   width: 100%;
 }
 
+.gallery-item img:hover {
+  opacity: 0.6;
+}
+
 .gallery-btn {
   position: absolute;
   background-color: #ffcccc;
-  top: 50%;
-  left: 50%;
+    top: 50%;
+    left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
 }

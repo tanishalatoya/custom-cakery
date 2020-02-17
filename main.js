@@ -83,3 +83,10 @@ galleryBtns.forEach(btn => {
     }
   });
 });
+
+close.addEventListener('keyup', () => {
+  if (event.keyCode === 13) {
+    menu.classList.remove("active");
+    close.classList.remove("active")
+  }
+})

@@ -2,9 +2,9 @@
 
 html, body {
   color: #576574;
-  font-size: 14px;
+  font-size: 1.2em;
   margin: 0;
-  font-family: 'Josefin Slab', serif;
+  font-family: 'Work Sans', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: space-between;
@@ -59,7 +59,7 @@ button {
 
 h1 {
   text-align: center;
-  font-size: 50px;
+  /* font-size: 50px; */
   margin: 45px 0;
 }
 
@@ -79,17 +79,23 @@ h4 {
 /********************************* HEADER *********************************/
 
 .header {
-  background-color: #333333;
-  padding: 5px 25px;
+  background-color: #53537c;
+  color: #fff;
   display: flex;
   flex-direction: column;
   margin-bottom: 65px;
+  padding: 5px 25px;
 }
 
 .hamburger {
   position: absolute;
-  top: 10px;
-  left: 10px;
+    top: 10px;
+    left: 10px;
+}
+
+h1 {
+  color: #fff;
+  font-size: 2.5em;
 }
 
 .close {

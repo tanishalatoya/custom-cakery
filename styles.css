@@ -11,6 +11,10 @@ html, body {
   height: 100%;
 }
 
+*:focus {
+  outline-color: blue;
+}
+
 body.modal-active::after {
   content: '';
   background-color: rgba(0, 0, 0, .5);
@@ -26,10 +30,6 @@ a {
   text-decoration: none;
 }
 
-a:focus {
-  outline: none !important;
-}
-
 form {
   background-color: rgba(255, 255, 255, .7);
   margin-bottom: 25px;
@@ -41,10 +41,10 @@ form {
 input[type="text"], input[type="number"], textarea {
   width: 100%;
 }
-
+/*
 input:focus {
   outline: none!important;
-}
+} */
 
 button {
   background-color: #333333;
@@ -159,7 +159,7 @@ footer {
   flex-shrink: 0;
 }
 
-ul a i {
+.social-media a i {
   color: #3D2954;
   margin: 0 1%;
   width: auto;
@@ -173,7 +173,6 @@ main {
 
 .main-image p {
   color: 	#3f4347;
-  /* display: block; */
   font-size: .8em;
   padding: .5% 0 2.5%;
   text-align: center;

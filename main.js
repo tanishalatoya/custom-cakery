@@ -1,5 +1,6 @@
 const menu = document.querySelector(".menu");
 const close = document.querySelector(".close");
+const galleryBtns = document.querySelectorAll('.gallery-btn');
 
 /********************************* HEADER *********************************/
 
@@ -44,11 +45,12 @@ if (document.querySelector("#order")) {
   const showModal = () => {
     modal.classList.add("active")
     body.classList.add("modal-active")
+    console.log('it works here');
   }
 
   document.querySelector(".modal-button").addEventListener("click", () => {
     if (document.querySelector(".modal-email-field").value) {
-      document.querySelector(".modal-content").innerHTML = 
+      document.querySelector(".modal-content").innerHTML =
       "<h3>Your coupon code is <span class='green'>cakelovers</span></h3>"
     }
   })
@@ -65,3 +67,19 @@ if (document.querySelector("#order")) {
     validateForm()
   })
 }
+
+/********************************* ACCESSIBILITY FUNCTIONALITY *********************************/
+document.querySelector('.hamburger').addEventListener('keyup', () => {
+  if (event.keyCode === 13) {
+    menu.classList.add("active");
+    close.classList.add("active")
+  }
+});
+
+galleryBtns.forEach(btn => {
+  btn.addEventListener('keyup', () => {
+    if(event.keyCode === 13) {
+      window.location.href = 'order.html';
+    }
+  });
+});

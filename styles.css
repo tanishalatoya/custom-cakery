@@ -81,6 +81,7 @@ form div {
 }
 
 #textarea {
+  margin-top: 2%;
   width: 375%;
 }
 
@@ -133,6 +134,12 @@ h2 {
   font-size: 1.3em;
   text-align: center;
   margin: 0 0 2%;
+}
+
+select {
+  font-size: .7em;
+  /* margin-left: -25%; */
+  margin-top: 4%;
 }
 
 .content {

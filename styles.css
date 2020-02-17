@@ -1,7 +1,7 @@
 /********************************* NATIVE ELS & GENERAL STYLES *********************************/
 
 html, body {
-  color: #576574;
+  color: #3D2954;
   font-size: 1.2em;
   margin: 0;
   font-family: 'Work Sans', sans-serif;
@@ -60,7 +60,7 @@ button {
 h1 {
   text-align: center;
   /* font-size: 50px; */
-  margin: 45px 0;
+  /* margin: 45px 0; */
 }
 
 h4 {
@@ -68,22 +68,23 @@ h4 {
   text-align: center;
 }
 
-.description-text {
-  max-width: 500px;
-}
-
 .content {
   flex: 1 0 auto;
 }
 
 /********************************* HEADER *********************************/
+#landing .hamburger  {
+  height: 2em;
+}
+
+
 
 .header {
-  background-color: #53537c;
+  background:	#3d2954;
   color: #fff;
   display: flex;
   flex-direction: column;
-  height: 15vh;
+  height: 12vh;
   margin-bottom: 65px;
   padding: 5px 25px;
 }
@@ -139,25 +140,52 @@ h1 {
 /********************************* FOOTER *********************************/
 
 footer {
-  background-color: #53537c;
-  color: #fff;
+  /* background-color: #53537c; */
+  background: #CDCED0;
+  color: #3D2954;
   padding: 20px 0;
   text-align: center;
-  height: 15vh;
+  height: 5em;
   flex-shrink: 0;
 }
 
 ul a i {
-  color: #fff;
-  height: 5em;
+  color: #3D2954;
   margin: 0 1%;
   width: auto;
 }
 
 /********************************* LANDING PAGE *********************************/
+main {
+  height: auto;
+  padding: 1% 10%;
+}
+
+.main-image p {
+  color: 	#3f4347;
+  /* display: block; */
+  font-size: .8em;
+  padding: .5% 0 2.5%;
+  text-align: center;
+}
 
 .medium-image-text img {
   width: 400px;
+}
+
+.description-text {
+  line-height: 2em;
+  margin: auto;
+  text-align: justify;
+  width: 80%;
+}
+
+hr {
+  width: 60%;
+}
+
+.description-text p a {
+  color: blue;
 }
 
 /********************************* ORDER PAGE *********************************/
@@ -242,8 +270,10 @@ ul a i {
 }
 
 .medium-image {
-  border: dotted 20px #ffcccc;
+  border: solid 20px #ebe9ed;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 600px;
 }
 

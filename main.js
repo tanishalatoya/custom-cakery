@@ -50,7 +50,12 @@ if (document.querySelector("#order")) {
   document.querySelector(".modal-button").addEventListener("click", () => {
     if (document.querySelector(".modal-email-field").value) {
       document.querySelector(".modal-content").innerHTML =
-      "<h3>Your coupon code is <span class='green'>cakelovers</span></h3>"
+      `<h3>Your coupon code is <span class='yellow'>cakelovers</span></h3>`
+      ocument.querySelector(".modal-content").innerHTML =
+      `<i tabindex="0" class="modal-close fas fa-times"></i>`
+      document.querySelector(".modal-close").addEventListener("click", () => {
+        hideModal()
+      })
     }
   })
 
@@ -90,10 +95,11 @@ close.addEventListener('keyup', () => {
   }
 })
 
-document.querySelector(".modal-close").addEventListener('keyUp', () => {
+document.querySelector(".modal-close").addEventListener('keyup', () => {
+  let modal = document.querySelector(".modal");
+  let body = document.querySelector("body");
   if (event.keyCode === 13) {
-    console.log('babe');
-  hideModal();
+    modal.classList.remove("active")
+    body.classList.remove("modal-active")
   }
-
-})
+});
